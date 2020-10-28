@@ -1,0 +1,16 @@
+<section>
+
+  <app-courses-list-tools (clickFind)="onFindButtonClick($event)"></app-courses-list-tools>
+
+  <div *ngIf="courses == null || courses.length == 0" class="no-data-container">
+    <span>No data. Feel free to add a new course</span>
+  </div>
+
+  <app-course *ngFor="let course of courses" [course]='course' [searchPattern]='searchPattern'
+    (clickEdit)="onCourseEditClick($event)" (clickDelete)="onCourseDeleteClick($event)">
+  </app-course>
+
+  <div class="load-container">
+    <button (click)="onLoadMoreClick()">LOAD MORE</button>
+  </div>
+</section>

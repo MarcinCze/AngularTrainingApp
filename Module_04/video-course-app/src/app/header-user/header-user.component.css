@@ -1,0 +1,21 @@
+div.user-btn>a, div.user-btn>a:visited, div.user-btn>a:hover {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  bottom: 4px;
+}
+
+div.user-btn>img {
+  width: 20px;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+div.user-btn.left {
+  float: left;
+  margin-right: 1em;
+}
+
+div.user-btn.right {
+  float: right;
+}
