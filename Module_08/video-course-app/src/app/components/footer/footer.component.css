@@ -1,0 +1,22 @@
+p {
+  font-size: smaller;
+  color: #ADB0BB;
+}
+
+@media only screen and (min-width: 768px) {
+  div {
+    padding-right: 2em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  div {
+    padding-right: 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  div {
+    padding-right: 20em;
+  }
+}

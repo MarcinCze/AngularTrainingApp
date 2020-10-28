@@ -1,0 +1,19 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'duration'
+})
+export class DurationPipe implements PipeTransform {
+
+  transform(value: number): string {
+    const hours: number = Math.floor(value / 60);
+    const minutes: number = value - (hours * 60);
+
+    if (isNaN(hours) || isNaN(minutes)) {
+      return null;
+    }
+
+    return hours !== 0 ? `${hours}h ${minutes}min` : `${minutes}min`;
+  }
+
+}

@@ -1,0 +1,78 @@
+<div class="editor-container">
+  <h3>{{pageTitle}}</h3>
+
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()" (keydown.enter)="$event.preventDefault()">
+
+    <!-- TITLE -->
+    <div class="control-area">
+      <div>
+        <label for="title"><strong>Title:</strong></label>
+        <div *ngIf="title.invalid && (title.dirty || title.touched)">
+          <span *ngIf="title.errors.required" class="error-message">This field is required</span>
+          <span *ngIf="title.errors.maxlength" class="error-message">This field must have no more than 50
+            characters</span>
+        </div>
+      </div>
+      <input formControlName="title" type="text" name="title" id="title" placeholder="What's my title?"
+        [ngClass]="{'error-control' : title.invalid && (title.dirty || title.touched)}">
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class=" control-area">
+      <div>
+        <label for="description"><strong>Description:</strong></label>
+        <div *ngIf="description.invalid && (description.dirty || description.touched)">
+          <span *ngIf="description.errors.required" class="error-message">This field is required</span>
+          <span *ngIf="description.errors.maxlength" class="error-message">This field must have no more than 500
+            characters</span>
+        </div>
+      </div>
+      <textarea formControlName="description" name="description" id="description" placeholder="Some words about me..."
+        rows="4"
+        [ngClass]="{'error-control' : description.invalid && (description.dirty || description.touched)}"></textarea>
+    </div>
+
+    <!-- DATE -->
+    <div class="control-area">
+      <div>
+        <label><strong>Date:</strong></label>
+        <div *ngIf="creationDate.invalid && (creationDate.dirty || creationDate.touched)">
+          <span *ngIf="creationDate.errors.required" class="error-message">This field is required</span>
+          <span *ngIf="creationDate.errors.wrongDateFormat" class="error-message">Date must be correct and in format
+            dd/MM/yyyy</span>
+        </div>
+      </div>
+      <app-date-control formControlName="creationDate">
+      </app-date-control>
+    </div>
+
+    <!-- DURATION -->
+    <div class="control-area">
+      <div>
+        <label><strong>Duration:</strong></label>
+        <div *ngIf="duration.invalid && (duration.dirty || duration.touched)">
+          <span *ngIf="duration.errors.required" class="error-message">This field is required</span>
+          <span *ngIf="duration.errors.notNumber" class="error-message">It must be a number</span>
+        </div>
+      </div>
+      <app-duration-control formControlName="duration"></app-duration-control>
+    </div>
+
+    <!-- AUTHORS -->
+    <div class="control-area">
+      <div>
+        <label><strong>Authors:</strong></label>
+        <div *ngIf="authors.invalid && (authors.dirty || authors.touched)">
+          <span *ngIf="authors.errors.required" class="error-message">This field is required</span>
+          <span *ngIf="authors.errors.notEvenOne" class="error-message">There must be at least one author</span>
+          <span *ngIf="authors.errors.moreThanFive" class="error-message">There cannot be more than 5 authors</span>
+        </div>
+      </div>
+      <app-authors-control formControlName="authors" [authors]='allAuthors'></app-authors-control>
+    </div>
+
+    <button type="submit" class="btn blue btn-save" [disabled]="courseForm.invalid">Save</button>
+    <button class="btn blue btn-cancel" (click)="onCancelClick()">Cancel</button>
+  </form>
+
+</div>
