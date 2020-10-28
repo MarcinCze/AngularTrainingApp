@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body {
+  margin: 0;
+  background-color: #F2F3F7;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-open-sans-condensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-yellowtail {
+  font-family: 'Yellowtail', cursive;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  color: white;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.green {
+  background-color: #9BC837;
+}
+
+.btn.blue {
+  background-color: #30B6DD;
+}

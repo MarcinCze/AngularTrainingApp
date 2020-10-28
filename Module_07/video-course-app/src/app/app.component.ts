@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+
+  title = 'video-course-app';
+
+  constructor(private titleService: Title) { }
+
+  ngOnInit(): void {
+    const pckg = require('./../../package.json');
+    this.titleService.setTitle(`VideoCourse ${pckg.version} - ${pckg.description}`);
+  }
+
+
+}

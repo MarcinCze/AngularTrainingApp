@@ -1,0 +1,11 @@
+span {
+  color: white;
+  float: right;
+}
+
+img {
+  float: left;
+  width: 24px;
+  height: auto;
+  margin-right: 0.5em;
+}

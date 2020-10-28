@@ -1,0 +1,30 @@
+<div class="editor-container">
+  <h3>{{title}}</h3>
+
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+    <div class="control-area">
+      <label for="title"><strong>Title:</strong></label>
+      <input formControlName="title" type="text" name="title" id="title" placeholder="What's my title?">
+    </div>
+    <div class="control-area">
+      <label for="description"><strong>Description:</strong></label>
+      <textarea formControlName="description" name="description" id="description" placeholder="Some words about me..." rows="4"></textarea>
+    </div>
+    <div class="control-area">
+      <label><strong>Date:</strong></label>
+      <app-date-control></app-date-control>
+    </div>
+    <div class="control-area">
+      <label><strong>Duration:</strong></label>
+      <app-duration-control></app-duration-control>
+    </div>
+    <div class="control-area">
+      <label><strong>Authors:</strong></label>
+      <app-authors-control></app-authors-control>
+    </div>
+
+    <button type="submit" class="btn blue btn-save">Save</button>
+    <button class="btn blue btn-cancel" (click)="onCancelClick()">Cancel</button>
+  </form>
+
+</div>

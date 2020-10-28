@@ -1,0 +1,35 @@
+.editor-container {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  margin-top: 3em;
+  background-color: white;
+  padding: 25px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  input[type=text], textarea {
+    width: 50%;
+  }
+}
+
+.control-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.btn-cancel, .btn-save{
+  width: 100px;
+}
+
+.btn-cancel {
+  margin-left: 2em;
+}
