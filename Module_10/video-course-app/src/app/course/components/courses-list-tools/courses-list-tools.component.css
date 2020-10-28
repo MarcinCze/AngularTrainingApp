@@ -1,0 +1,19 @@
+input[type=text] {
+  background: url('/assets/icons8-search-96.png') no-repeat scroll 10px 5px;
+  background-size: 25px 25px;
+  background-color: white;
+  width: 20%;
+  padding: 10px 45px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#btnSearch {
+  margin-left: 0.5em;
+}
+
+#btnAddNew {
+  margin-top: 2em;
+  float: right;
+}

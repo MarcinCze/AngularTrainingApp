@@ -1,0 +1,8 @@
+<div>
+  <app-header-logo></app-header-logo>
+  <app-header-user *ngIf="isLogged"></app-header-user>
+</div>
+
+<nav>
+  <app-breadcrumbs *ngIf="isLogged"></app-breadcrumbs>
+</nav>

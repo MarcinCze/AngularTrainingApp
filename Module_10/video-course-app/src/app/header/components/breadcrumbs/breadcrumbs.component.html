@@ -1,0 +1,9 @@
+<div class="links-container">
+  <div style="display: flex; flex-direction: row;">
+    <div><a routerLink="/courses" routerLinkActive="active">Courses</a></div>
+    <div *ngIf="courseName !== null">
+      <span style="margin-right: 1em;">\</span>
+      <span>{{courseName}}</span>
+    </div>
+  </div>
+</div>
