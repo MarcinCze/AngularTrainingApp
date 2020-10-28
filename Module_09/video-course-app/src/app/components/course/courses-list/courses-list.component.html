@@ -1,0 +1,21 @@
+<section>
+
+  <app-courses-list-tools (clickFind)="onFindButtonClick($event)"></app-courses-list-tools>
+
+  <div *ngIf="courses == null || courses.length == 0" class="no-data-container">
+    <span>No data. Feel free to add a new course</span>
+  </div>
+
+  <app-course-item *ngFor="let course of courses" [course]='course' (clickEdit)="onCourseEditClick($event)"
+    (clickDelete)="onCourseDeleteClick($event)">
+  </app-course-item>
+
+  <div class="load-container" *ngIf="loadMoreVisible">
+    <button (click)="onLoadMoreClick()">LOAD MORE</button>
+  </div>
+
+</section>
+
+<app-confirmation-modal [isVisible]='confIsVisible' [title]='confModalTitle' [message]='confModalMessage'
+  (answerProvided)='onDeleteConfirmationReceived($event)'>
+</app-confirmation-modal>

@@ -1,0 +1,46 @@
+div {
+  background-color: #414452;
+  overflow: hidden;
+}
+
+app-header-logo, app-header-user {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+app-header-logo {
+  float: left;
+  margin-left: 1em;
+}
+
+app-header-user {
+  float: right;
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  app-header-logo {
+    margin-left: 2em;
+  }
+  app-header-user {
+    margin-right: 2em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  app-header-logo {
+    margin-left: 10em;
+  }
+  app-header-user {
+    margin-right: 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  app-header-logo {
+    margin-left: 20em;
+  }
+  app-header-user {
+    margin-right: 20em;
+  }
+}
