@@ -1,0 +1,9 @@
+<div class="links-container">
+  <div style="display: flex; flex-direction: row;">
+    <div><a routerLink="/courses" routerLinkActive="active">{{ 'HEADER.LINK_COURSES' | translate }}</a></div>
+    <div *ngIf="(courseName$ | async) != null">
+      <span style="margin-right: 1em;">\</span>
+      <span>{{courseName$ | async}}</span>
+    </div>
+  </div>
+</div>

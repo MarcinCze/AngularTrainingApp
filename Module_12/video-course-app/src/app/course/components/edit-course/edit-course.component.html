@@ -1,0 +1,84 @@
+<div class="editor-container">
+  <h3>{{pageTitle}}</h3>
+
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()" (keydown.enter)="$event.preventDefault()">
+
+    <!-- TITLE -->
+    <div class="control-area">
+      <div>
+        <label for="title"><strong>{{ 'COURSE.EDITOR.LABEL_TITLE' | translate }}</strong></label>
+        <div *ngIf="title.invalid && (title.dirty || title.touched)">
+          <span *ngIf="title.errors.required"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.REQUIRED' | translate }}</span>
+          <span *ngIf="title.errors.maxlength"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.MAX_CHARS_50' | translate }}</span>
+        </div>
+      </div>
+      <input formControlName="title" type="text" name="title" id="title"
+        [placeholder]="'COURSE.EDITOR.PLACEHOLDER_TITLE' | translate"
+        [ngClass]="{'error-control' : title.invalid && (title.dirty || title.touched)}">
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class=" control-area">
+      <div>
+        <label for="description"><strong>{{ 'COURSE.EDITOR.LABEL_DESCRIPTION' | translate }}</strong></label>
+        <div *ngIf="description.invalid && (description.dirty || description.touched)">
+          <span *ngIf="description.errors.required"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.REQUIRED' | translate }}</span>
+          <span *ngIf="description.errors.maxlength"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.MAX_CHARS_500' | translate }}</span>
+        </div>
+      </div>
+      <textarea formControlName="description" name="description" id="description"
+        [placeholder]="'COURSE.EDITOR.PLACEHOLDER_DESCRIPTION' | translate" rows="4"
+        [ngClass]="{'error-control' : description.invalid && (description.dirty || description.touched)}"></textarea>
+    </div>
+
+    <!-- DATE -->
+    <div class="control-area">
+      <div>
+        <label><strong>{{ 'COURSE.EDITOR.LABEL_DATE' | translate }}</strong></label>
+        <div *ngIf="creationDate.invalid && (creationDate.dirty || creationDate.touched)">
+          <span *ngIf="creationDate.errors.required"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.REQUIRED' | translate }}</span>
+          <span *ngIf="creationDate.errors.wrongDateFormat"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.DATE_FORMAT' | translate }}</span>
+        </div>
+      </div>
+      <app-date-control formControlName="creationDate"></app-date-control>
+    </div>
+
+    <!-- DURATION -->
+    <div class="control-area">
+      <div>
+        <label><strong>{{ 'COURSE.EDITOR.LABEL_DURATION' | translate }}</strong></label>
+        <div *ngIf="duration.invalid && (duration.dirty || duration.touched)">
+          <span *ngIf="duration.errors.required"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.REQUIRED' | translate }}</span>
+          <span *ngIf="duration.errors.notNumber"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.NOT_A_NUMBER' | translate }}</span>
+        </div>
+      </div>
+      <app-duration-control formControlName="duration"></app-duration-control>
+    </div>
+
+    <!-- AUTHORS -->
+    <div class="control-area">
+      <div>
+        <label><strong>{{ 'COURSE.EDITOR.LABEL_AUTHORS' | translate }}</strong></label>
+        <div *ngIf="authors.invalid && (authors.dirty || authors.touched)">
+          <span *ngIf="authors.errors.required"
+            class="error-message">{{ 'COURSE.EDITOR.ERRORS.REQUIRED' | translate }}</span>
+          <span *ngIf="authors.errors.notEvenOne" class="error-message">{{ 'COURSE.EDITOR.ERRORS.AT_LEAST_ONE_AUTHOR' | translate }}</span>
+          <span *ngIf="authors.errors.moreThanFive" class="error-message">{{ 'COURSE.EDITOR.ERRORS.MAX_5_AUTHORS' | translate }}</span>
+        </div>
+      </div>
+      <app-authors-control formControlName="authors" [authors]='allAuthors'></app-authors-control>
+    </div>
+
+    <button type="submit" class="btn blue btn-save" [disabled]="courseForm.invalid">{{ 'COURSE.EDITOR.BTN_SAVE' | translate }}</button>
+    <button class="btn blue btn-cancel" (click)="onCancelClick()">{{ 'COURSE.EDITOR.BTN_CANCEL' | translate }}</button>
+  </form>
+
+</div>

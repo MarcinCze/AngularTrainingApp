@@ -1,0 +1,5 @@
+<div>
+  <input type="text" [formControl]="durationInput"
+    [ngClass]="{'error-control' : durationInput.invalid && (durationInput.dirty || durationInput.touched)}">
+  <span>{{durationInput.value | duration}}</span>
+</div>

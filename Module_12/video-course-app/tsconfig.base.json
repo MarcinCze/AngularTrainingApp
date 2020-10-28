@@ -1,0 +1,49 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@vc-auth/*": [
+        "src/app/authentication/*"
+      ],
+      "@vc-core/*": [
+        "src/app/core/*"
+      ],
+      "@vc-course/*": [
+        "src/app/course/*"
+      ],
+      "@vc-footer/*": [
+        "src/app/footer/*"
+      ],
+      "@vc-header/*": [
+        "src/app/header/*"
+      ],
+      "@vc-shared/*": [
+        "src/app/shared/*"
+      ],
+      "@vc-widgets/*": [
+        "src/app/widgets/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}

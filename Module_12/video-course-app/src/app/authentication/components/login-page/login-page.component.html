@@ -1,0 +1,43 @@
+<div class="login-container">
+  <div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <h2>{{ 'LOGIN.PAGE_TITLE' | translate }}</h2>
+      <div style="color: red;">
+        <h3>{{loginErrorMessage$ | async}}</h3>
+      </div>
+      <div>
+        <div class="form-label-row">
+          <label for="email"><strong>{{ 'LOGIN.LABEL_EMAIL' | translate }}</strong></label>
+          <span *ngIf="email.invalid && (email.dirty || email.touched) && email.errors.required">
+            <small>{{ 'LOGIN.ERR_REQUIRED' | translate }}</small>
+          </span>
+          <span *ngIf="email.invalid && (email.dirty || email.touched) && email.errors.email">
+            <small>{{ 'LOGIN.ERR_MAIL_FORMAT' | translate }}</small>
+          </span>
+        </div>
+        <input type="text" formControlName="email" name="email" id="email"
+          [placeholder]="'LOGIN.PLACEHOLDER_EMAIL' | translate">
+      </div>
+
+      <div style="margin-top: 1em;">
+        <div class="form-label-row">
+          <label for="password"><strong>{{ 'LOGIN.LABEL_PASSWORD' | translate }}</strong></label>
+          <span *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.required">
+            <small>{{ 'LOGIN.ERR_REQUIRED' | translate }}</small>
+          </span>
+          <span *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.maxlength">
+            <small>{{ 'LOGIN.ERR_MAX_PASS_50_CHARS ' | translate }}</small>
+          </span>
+        </div>
+        <input type="password" formControlName="password" name="password" id="password"
+          [placeholder]="'LOGIN.PLACEHOLDER_PASSWORD' | translate">
+      </div>
+
+      <div class="form-submit-row">
+        <small><a routerLink="/login">{{ 'LOGIN.LINK_FORGOTTEN_PASS' | translate }}</a></small>
+        <button type="submit" class="btn blue btn-submit" [disabled]="loginForm.invalid">{{ 'LOGIN.BTN_LOGIN' | translate }}</button>
+      </div>
+
+    </form>
+  </div>
+</div>

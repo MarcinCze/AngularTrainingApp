@@ -1,0 +1,39 @@
+<div *ngIf="course != null && isVisible" class="course-container" [appCourseDateStatus]="course.creationDate"
+  [ngClass]="{ 'top-rated': course.topRated }">
+
+  <div class="top-container">
+
+    <div class="top column-1">
+      <h3 class="course-title font-open-sans">{{course.title | uppercase}} <i *ngIf="course.topRated"
+          class="fas fa-star"></i></h3>
+    </div>
+
+    <div class="top column-2">
+      <span class="course-duration"><i class="far fa-clock"></i> {{course.duration | duration}}</span>
+      <span class="course-creation-date" style="margin-left: 1em;">
+        <i class="far fa-calendar-alt"></i> {{course.creationDate | date:'d LLL, yyyy'}}
+      </span>
+    </div>
+
+    <div class="top column-3"></div>
+
+  </div>
+
+  <div class="bottom-container">
+
+    <div class="bottom column-1">
+      <p class="course-description font-open-sans">{{course.description}}</p>
+    </div>
+
+    <div class="bottom column-2">
+      <button class="btn blue btn-edit" (click)="onEditClick()">
+        <i class="fas fa-pen"></i> {{ 'COURSE.LIST.BTN_EDIT' | translate }}
+      </button>
+      <button class="btn blue btn-delete" (click)="onDeleteClick()">
+        <i class="fas fa-trash"></i> {{ 'COURSE.LIST.BTN_DELETE' | translate }}
+      </button>
+    </div>
+
+  </div>
+
+</div>

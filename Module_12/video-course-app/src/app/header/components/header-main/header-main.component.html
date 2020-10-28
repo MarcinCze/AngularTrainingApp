@@ -1,0 +1,13 @@
+<div>
+  <app-header-logo></app-header-logo>
+
+  <div class="logged-options-container" *ngIf="isLogged$ | async">
+    <app-language-selector></app-language-selector>
+    <app-header-user></app-header-user>
+  </div>
+
+</div>
+
+<nav>
+  <app-breadcrumbs *ngIf="isLogged$ | async"></app-breadcrumbs>
+</nav>

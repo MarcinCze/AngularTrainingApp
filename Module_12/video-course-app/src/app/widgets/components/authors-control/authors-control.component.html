@@ -1,0 +1,16 @@
+<div>
+  <input list="authorsInput" (input)="inputChanged($event)" (change)="cleanInput($event)" (onblur)="cleanInput($event)"
+    [ngClass]="{'error-control' : authorsInput.invalid && (authorsInput.dirty || authorsInput.touched)}">
+  <datalist id="authorsInput">
+    <option *ngFor="let author of authors" value={{author|author}}>
+  </datalist>
+</div>
+
+<div style="display: inline-block; position: relative; bottom: 46px; left: 10px;">
+  <div style="display: flex; flex-direction: row;">
+    <div *ngFor="let picked of pickedAuthors" class="picked-author-container">
+      <small class="font-open-sans-condensed">{{picked|author}}</small>
+      <img src="/assets/icons8-delete-150.png" (click)="closeBtnClicked(picked)">
+    </div>
+  </div>
+</div>

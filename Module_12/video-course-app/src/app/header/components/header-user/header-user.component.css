@@ -1,0 +1,20 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+div.user-btn>button {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+
+div.user-btn>img {
+  width: 20px;
+  height: auto;
+  margin-right: 0.5em;
+}

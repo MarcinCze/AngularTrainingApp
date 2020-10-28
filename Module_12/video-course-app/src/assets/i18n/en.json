@@ -1,0 +1,84 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "Log off",
+    "LINK_COURSES": "Courses"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright &copy; VideoCourses. All rights reserved."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "Add course",
+      "BTN_EDIT": "Edit",
+      "BTN_DELETE": "Delete",
+      "BTN_LOAD_MORE": "Load more",
+      "NO_DATA": "No data. Feel free to add a new course.",
+      "MSG_TITLE": "Confirmation",
+      "MSG_DELETE": "Are you sure to remove course {{courseTitle}}?",
+      "PLACEHOLDER_SEARCH_TEXT": "Text to search"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "Save",
+      "BTN_CANCEL": "Cancel",
+      "PAGE_TITLE_ADD": "Add new course",
+      "PAGE_TITLE_EDIT": "Edit course",
+      "LABEL_TITLE": "Title:",
+      "PLACEHOLDER_TITLE": "What's my title?",
+      "LABEL_DESCRIPTION": "Description",
+      "PLACEHOLDER_DESCRIPTION": "Some words about me...",
+      "LABEL_DATE": "Date:",
+      "LABEL_DURATION": "Duration:",
+      "LABEL_AUTHORS": "Authors:",
+      "ERRORS": {
+        "REQUIRED": "This field is required",
+        "MAX_CHARS_50": "This field must have no more than 50 characters",
+        "MAX_CHARS_500": "This field must have no more than 500 characters",
+        "DATE_FORMAT": "Date must be correct and in format dd/MM/yyyy",
+        "NOT_A_NUMBER": "It must be a number",
+        "AT_LEAST_ONE_AUTHOR": "There must be at least one author",
+        "MAX_5_AUTHORS": "There cannot be more than 5 authors"
+      }
+    }
+
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "Login",
+    "PAGE_TITLE": "Login",
+    "LABEL_EMAIL": "Email:",
+    "LABEL_PASSWORD": "Password:",
+    "PLACEHOLDER_EMAIL": "Enter e-mail",
+    "PLACEHOLDER_PASSWORD": "Enter password",
+    "LINK_FORGOTTEN_PASS": "Forgot password?",
+    "ERR_REQUIRED": "*required",
+    "ERR_MAIL_FORMAT": "*not an email",
+    "ERR_MAX_PASS_50_CHARS": "*password cannot contain more than 50 chars",
+    "ERR_API_401": "Invalid credentials. Please verify login & password",
+    "ERR_API_GENERAL": "A data error occured. Please try again later."
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "Oops!",
+      "BTN_HOMEPAGE": "Go to homepage"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - page not found",
+      "MESSAGE_LINE_1": "The page you are looking for might have been removed,",
+      "MESSAGE_LINE_2": "had its name changed or is temporarily unavailable."
+    },
+    "SERVER_ERROR": {
+      "CODE": "Technical issue",
+      "MESSAGE_LINE_1": "The page you are looking for cannot connect to the server.",
+      "MESSAGE_LINE_2": "Please try again later."
+    }
+  },
+  "LANGUAGES": {
+    "ENGLISH": "English",
+    "GREEK": "Greek",
+    "TURKISH": "Turkish",
+    "SERBIAN": "Serbian",
+    "THAI": "Thai",
+    "CZECH": "Czech",
+    "VIETNAMESE": "Vietnamese"
+  }
+}

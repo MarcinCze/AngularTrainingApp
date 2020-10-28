@@ -1,0 +1,58 @@
+.editor-container {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  box-shadow: 0px 0px 5px 0px rgba(224, 224, 224, 1);
+  margin-top: 3em;
+  background-color: white;
+  padding: 25px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  input[type=text], textarea {
+    width: 50%;
+  }
+}
+
+div.control-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+div.control-area>div {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-cancel, .btn-save {
+  width: 100px;
+}
+
+.btn-save:disabled {
+  background-color: #a8a8a8;
+  cursor: default;
+}
+
+.btn-cancel {
+  margin-left: 2em;
+}
+
+span.error-message {
+  color: red;
+  margin-left: 1em;
+}
+
+input.error-control, textarea.error-control {
+  border: 2px solid red;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}

@@ -1,0 +1,84 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "Одјава",
+    "LINK_COURSES": "Курсеви"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Ауторско право &copy; VideoCourses. Сва права задржана."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "Додај курс",
+      "BTN_EDIT": "Измени",
+      "BTN_DELETE": "Избриши",
+      "BTN_LOAD_MORE": "Учитај више",
+      "NO_DATA": "Нема података. Слободно додајте нови курс.",
+      "MSG_TITLE": "Потврда",
+      "MSG_DELETE": "Јесте ли сигурни да ћете уклонити курс {{courseTitle}}?",
+      "PLACEHOLDER_SEARCH_TEXT": "Текст за претраживање"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "Сачувај",
+      "BTN_CANCEL": "Откажи",
+      "PAGE_TITLE_ADD": "Додај нови курс",
+      "PAGE_TITLE_EDIT": "Измени курс",
+      "LABEL_TITLE": "Наслов:",
+      "PLACEHOLDER_TITLE": "Који је мој наслов?",
+      "LABEL_DESCRIPTION": "Опис",
+      "PLACEHOLDER_DESCRIPTION": "Неке речи о мени ...",
+      "LABEL_DATE": "Датум:",
+      "LABEL_DURATION": "Трајање:",
+      "LABEL_AUTHORS": "Аутори:",
+      "ERRORS": {
+        "REQUIRED": "Ово поље је обавезно",
+        "MAX_CHARS_50": "Ово поље мора имати највише 50 знакова",
+        "MAX_CHARS_500": "Ово поље мора имати највише 500 знакова",
+        "DATE_FORMAT": "Датум мора бити тачан и у формату дд / ММ / гггг",
+        "NOT_A_NUMBER": "То мора да је број",
+        "AT_LEAST_ONE_AUTHOR": "Мора да постоји најмање један аутор",
+        "MAX_5_AUTHORS": "Не може бити више од 5 аутора"
+      }
+    }
+
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "Пријава",
+    "PAGE_TITLE": "Пријава",
+    "LABEL_EMAIL": "Емаил:",
+    "LABEL_PASSWORD": "Лозинка:",
+    "PLACEHOLDER_EMAIL": "Унесите е-пошту",
+    "PLACEHOLDER_PASSWORD": "Унесите лозинку",
+    "LINK_FORGOTTEN_PASS": "Заборавили сте лозинку?",
+    "ERR_REQUIRED": "* обавезно",
+    "ERR_MAIL_FORMAT": "* није емаил",
+    "ERR_MAX_PASS_50_CHARS": "* лозинка не може да садржи више од 50 знакова",
+    "ERR_API_401": "Неважећи акредитиви. Молимо вас да проверите пријаву и лозинку",
+    "ERR_API_GENERAL": "Дошло је до грешке у подацима. Покушајте поново касније."
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "Упс!",
+      "BTN_HOMEPAGE": "Иди на почетну страницу"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - страница није пронађена",
+      "MESSAGE_LINE_1": "Страница коју тражите можда је уклоњена",
+      "MESSAGE_LINE_2": "је име промијењено или је привремено недоступно."
+    },
+    "SERVER_ERROR": {
+      "CODE": "Техничко питање",
+      "MESSAGE_LINE_1": "Страница коју тражите не може да се повеже са сервером.",
+      "MESSAGE_LINE_2": "Покушајте поново касније."
+    }
+  },
+  "LANGUAGES": {
+    "CZECH": "Чешки",
+    "ENGLISH": "енглески језик",
+    "GREEK": "Грчки",
+    "SERBIAN": "Српски",
+    "THAI": "Тајландски",
+    "TURKISH": "Турски",
+    "VIETNAMESE": "Вијетнамски"
+  }
+}

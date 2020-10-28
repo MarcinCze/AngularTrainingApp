@@ -1,0 +1,83 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "Oturumu kapat",
+    "LINK_COURSES": "Dersler"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Telif hakkı &copy; VideoCourses. Tüm hakları Saklıdır."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "Ders ekle",
+      "BTN_EDIT": "Düzenle",
+      "BTN_DELETE": "Sil",
+      "BTN_LOAD_MORE": "Daha fazla yükle",
+      "NO_DATA": "Veri yok. Yeni bir kurs eklemekten çekinmeyin.",
+      "MSG_TITLE": "Onay",
+      "MSG_DELETE": "{{courseTitle}} kursunu kaldırmak istediğinizden emin misiniz?",
+      "PLACEHOLDER_SEARCH_TEXT": "Aranacak metin"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "Kaydet",
+      "BTN_CANCEL": "İptal",
+      "PAGE_TITLE_ADD": "Yeni kurs ekle",
+      "PAGE_TITLE_EDIT": "Kursu düzenle",
+      "LABEL_TITLE": "Başlık:",
+      "PLACEHOLDER_TITLE": "Başlığım nedir?",
+      "LABEL_DESCRIPTION": "Açıklama",
+      "PLACEHOLDER_DESCRIPTION": "Hakkımda bazı kelimeler ...",
+      "LABEL_DATE": "Tarih:",
+      "LABEL_DURATION": "Süre:",
+      "LABEL_AUTHORS": "Yazarlar:",
+      "ERRORS": {
+        "REQUIRED": "Bu alan zorunludur",
+        "MAX_CHARS_50": "Bu alan 50 karakterden fazla olmamalıdır",
+        "MAX_CHARS_500": "Bu alan 500 karakterden fazla olmamalıdır",
+        "DATE_FORMAT": "Tarih doğru ve dd / AA / yyyy biçiminde olmalıdır",
+        "NOT_A_NUMBER": "Bir sayı olmalı",
+        "AT_LEAST_ONE_AUTHOR": "En az bir yazar olmalı",
+        "MAX_5_AUTHORS": "5'ten fazla yazar olamaz"
+      }
+    }
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "Giriş",
+    "PAGE_TITLE": "Giriş",
+    "LABEL_EMAIL": "E-posta:",
+    "LABEL_PASSWORD": "Şifre:",
+    "PLACEHOLDER_EMAIL": "E-posta girin",
+    "PLACEHOLDER_PASSWORD": "Şifre girin",
+    "LINK_FORGOTTEN_PASS": "Şifrenizi mi unuttunuz?",
+    "ERR_REQUIRED": "* gerekli",
+    "ERR_MAIL_FORMAT": "* e-posta değil",
+    "ERR_MAX_PASS_50_CHARS": "* şifre 50'den fazla karakter içeremez",
+    "ERR_API_401": "Geçersiz kimlik bilgileri. Lütfen kullanıcı adınızı ve şifrenizi doğrulayın",
+    "ERR_API_GENERAL": "Bir veri hatası oluştu. Lütfen daha sonra tekrar deneyin."
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "Hata!",
+       "BTN_HOMEPAGE": "Ana sayfaya git"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - sayfa bulunamadı",
+       "MESSAGE_LINE_1": "Aradığınız sayfa kaldırılmış olabilir,",
+       "MESSAGE_LINE_2": "adı değiştirilmiş veya geçici olarak kullanılamamıştır."
+    },
+    "SERVER_ERROR": {
+      "CODE": "Teknik sorun",
+       "MESSAGE_LINE_1": "Aradığınız sayfa sunucuya bağlanamıyor.",
+       "MESSAGE_LINE_2": "Lütfen daha sonra tekrar deneyin."
+    }
+  },
+  "LANGUAGES": {
+    "CZECH": "Çek",
+    "ENGLISH": "İngilizce",
+    "GREEK": "Yunan",
+    "SERBIAN": "Sırpça",
+    "THAI": "Tayland",
+    "TURKISH": "Türk",
+    "VIETNAMESE": "Vietnam"
+  }
+}

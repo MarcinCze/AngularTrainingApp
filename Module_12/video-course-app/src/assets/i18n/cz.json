@@ -1,0 +1,83 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "Odhlášení",
+    "LINK_COURSES": "Kurzy"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Autorská práva &copy; VideoCourses. Všechna práva vyhrazena."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "Přidat kurz",
+      "BTN_EDIT": "Upravit",
+      "BTN_DELETE": "Smazat",
+      "BTN_LOAD_MORE": "Načíst další",
+      "NO_DATA": "Žádná data. Nebojte se přidat nový kurz.",
+      "MSG_TITLE": "Potvrzení",
+      "MSG_DELETE": "Opravdu odstraníte kurz {{courseTitle}}?",
+      "PLACEHOLDER_SEARCH_TEXT": "Text k vyhledávání"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "Uložit",
+       "BTN_CANCEL": "Zrušit",
+       "PAGE_TITLE_ADD": "Přidat nový kurz",
+       "PAGE_TITLE_EDIT": "Upravit kurz",
+       "LABEL_TITLE": "Title:",
+       "PLACEHOLDER_TITLE": "Jaký je můj název?",
+       "LABEL_DESCRIPTION": "Popis",
+       "PLACEHOLDER_DESCRIPTION": "Některá slova o mně ...",
+       "LABEL_DATE": "Datum:",
+       "LABEL_DURATION": "Trvání:",
+       "LABEL_AUTHORS": "Autoři:",
+       "ERRORS": {
+         "REQUIRED": "Toto pole je povinné",
+         "MAX_CHARS_50": "Toto pole nesmí obsahovat více než 50 znaků",
+         "MAX_CHARS_500": "Toto pole nesmí obsahovat více než 500 znaků",
+         "DATE_FORMAT": "Datum musí být správné a ve formátu dd / MM / rrrr",
+         "NOT_A_NUMBER": "Musí to být číslo",
+         "AT_LEAST_ONE_AUTHOR": "Musí existovat alespoň jeden autor",
+         "MAX_5_AUTHORS": "Nemůže být více než 5 autorů"
+       }
+    }
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "Přihlásit se",
+     "PAGE_TITLE": "Přihlášení",
+     "LABEL_EMAIL": "E-mail:",
+     "LABEL_PASSWORD": "Heslo:",
+     "PLACEHOLDER_EMAIL": "Zadejte e-mail",
+     "PLACEHOLDER_PASSWORD": "Zadejte heslo",
+     "LINK_FORGOTTEN_PASS": "Zapomněli jste heslo?",
+     "ERR_REQUIRED": "* povinná",
+     "ERR_MAIL_FORMAT": "* není e-mail",
+     "ERR_MAX_PASS_50_CHARS": "* heslo nesmí obsahovat více než 50 znaků",
+     "ERR_API_401": "Neplatná přihlašovací údaje. Ověřte prosím přihlašovací jméno a heslo",
+     "ERR_API_GENERAL": "Došlo k chybě dat. Zkuste to znovu později."
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "Jejda!",
+       "BTN_HOMEPAGE": "Přejít na domovskou stránku"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - stránka nenalezena",
+       "MESSAGE_LINE_1": "Stránka, kterou hledáte, mohla být odstraněna,",
+       "MESSAGE_LINE_2": "změnil název nebo je dočasně nedostupný."
+    },
+    "SERVER_ERROR": {
+      "CODE": "Technický problém",
+       "MESSAGE_LINE_1": "Hledaná stránka se nemůže připojit k serveru.",
+       "MESSAGE_LINE_2": "Zkuste to prosím znovu později."
+    }
+  },
+  "LANGUAGES": {
+    "ENGLISH": "anglický",
+    "GREEK": "řecký",
+    "TURKISH": "turecký",
+    "SERBIAN": "srbský",
+    "THAI": "thajský",
+    "CZECH": "český",
+    "VIETNAMESE": "vietnamský"
+  }
+}

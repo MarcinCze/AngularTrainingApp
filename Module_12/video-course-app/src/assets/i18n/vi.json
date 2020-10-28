@@ -1,0 +1,83 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "Đăng xuất",
+    "LINK_COURSES": "Khóa học"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Bản quyền &copy; VideoCourses. Đã đăng ký Bản quyền."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "Thêm khóa học",
+      "BTN_EDIT": "Chỉnh sửa",
+      "BTN_DELETE": "Xóa",
+      "BTN_LOAD_MORE": "Tải thêm",
+      "NO_DATA": "Không có dữ liệu. Vui lòng thêm khóa học mới.",
+      "MSG_TITLE": "Xác nhận",
+      "MSG_DELETE": "Bạn có chắc chắn xóa khóa học {{courseTitle}}?",
+      "PLACEHOLDER_SEARCH_TEXT": "Văn bản để tìm kiếm"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "Lưu",
+      "BTN_CANCEL": "Hủy",
+      "PAGE_TITLE_ADD": "Thêm khóa học mới",
+      "PAGE_TITLE_EDIT": "Chỉnh sửa khóa học",
+      "LABEL_TITLE": "Tiêu đề:",
+      "PLACEHOLDER_TITLE": "Tiêu đề của tôi là gì?",
+      "LABEL_DESCRIPTION": "Mô tả",
+      "PLACEHOLDER_DESCRIPTION": "Một số từ về tôi ...",
+      "LABEL_DATE": "Ngày:",
+      "LABEL_DURATION": "Thời lượng:",
+      "LABEL_AUTHORS": "Tác giả:",
+      "ERRORS": {
+        "REQUIRED": "Trường này là bắt buộc",
+        "MAX_CHARS_50": "Trường này không có quá 50 ký tự",
+        "MAX_CHARS_500": "Trường này phải có không quá 500 ký tự",
+        "DATE_FORMAT": "Ngày phải chính xác và ở định dạng dd / MM / yyyy",
+        "NOT_A_NUMBER": "Đó phải là một số",
+        "AT_LEAST_ONE_AUTHOR": "Phải có ít nhất một tác giả",
+        "MAX_5_AUTHORS": "Không thể có nhiều hơn 5 tác giả"
+      }
+    }
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "Đăng nhập",
+    "PAGE_TITLE": "Đăng nhập",
+    "LABEL_EMAIL": "Email:",
+    "LABEL_PASSWORD": "Mật khẩu:",
+    "PLACEHOLDER_EMAIL": "Nhập e-mail",
+    "PLACEHOLDER_PASSWORD": "Nhập mật khẩu",
+    "LINK_FORGOTTEN_PASS": "Quên mật khẩu?",
+    "ERR_REQUIRED": "* bắt buộc",
+    "ERR_MAIL_FORMAT": "* không phải là email",
+    "ERR_MAX_PASS_50_CHARS": "* mật khẩu không thể chứa hơn 50 ký tự",
+    "ERR_API_401": "Thông tin đăng nhập không hợp lệ. Vui lòng xác minh đăng nhập & mật khẩu",
+    "ERR_API_GENITH": "Xảy ra lỗi dữ liệu. Vui lòng thử lại sau."
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "Rất tiếc!",
+      "BTN_HOMEPAGE": "Truy cập trang chủ"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - không tìm thấy trang",
+       "MESSAGE_LINE_1": "Trang bạn đang tìm kiếm có thể đã bị xóa,",
+       "MESSAGE_LINE_2": "đã đổi tên hoặc tạm thời không khả dụng."
+    },
+    "SERVER_ERROR": {
+      "CODE": "Sự cố kỹ thuật",
+       "MESSAGE_LINE_1": "Trang bạn đang tìm kiếm không thể kết nối với máy chủ.",
+       "MESSAGE_LINE_2": "Vui lòng thử lại sau."
+    }
+  },
+  "LANGUAGES": {
+    "CZECH": "Séc",
+    "ENGLISH": "Tiếng Anh",
+    "GREEK": "Hy Lạp",
+    "SERBIAN": "Tiếng Serbia",
+    "THAI": "Thái lan",
+    "TURKISH": "Thổ Nhĩ Kỳ",
+    "VIETNAMESE": "Tiếng Việt"
+  }
+}

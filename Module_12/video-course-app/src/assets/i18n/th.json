@@ -1,0 +1,83 @@
+{
+  "HEADER": {
+    "APP_TITLE": "Video Courses",
+    "LINK_LOG_OFF": "ออกจากระบบ",
+    "LINK_COURSES": "หลักสูตร"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "ลิขสิทธิ์ &copy; VideoCourses. สงวนลิขสิทธิ์."
+  },
+  "COURSE": {
+    "LIST": {
+      "BTN_ADD": "เพิ่มหลักสูตร",
+      "BTN_EDIT": "แก้ไข",
+      "BTN_DELETE": "ลบ",
+      "BTN_LOAD_MORE": "โหลดเพิ่มเติม",
+      "NO_DATA": "ไม่มีข้อมูลรู้สึกอิสระที่จะเพิ่มหลักสูตรใหม่",
+      "MSG_TITLE": "การยืนยัน",
+      "MSG_DELETE": "คุณแน่ใจว่าจะลบหลักสูตร {{courseTitle}} หรือไม่",
+      "PLACEHOLDER_SEARCH_TEXT": "ข้อความเพื่อค้นหา"
+    },
+    "EDITOR": {
+      "BTN_SAVE": "บันทึก",
+      "BTN_CANCEL": "ยกเลิก",
+      "PAGE_TITLE_ADD": "เพิ่มหลักสูตรใหม่",
+      "PAGE_TITLE_EDIT": "แก้ไขหลักสูตร",
+      "LABEL_TITLE": "ชื่อ:",
+      "PLACEHOLDER_TITLE": "ชื่อของฉันคืออะไร",
+      "LABEL_DESCRIPTION": "คำอธิบาย",
+      "PLACEHOLDER_DESCRIPTION": "บางคำเกี่ยวกับฉัน ... ",
+      "LABEL_DATE": "วันที่:",
+      "LABEL_DURATION": "ระยะเวลา:",
+      "LABEL_AUTHORS": "Authors:",
+      "ข้อผิดพลาด": {
+        "REQUIRED": "ช่องนี้ต้องกรอก",
+        "MAX_CHARS_50": "ช่องนี้จะต้องมีไม่เกิน 50 ตัวอักษร",
+        "MAX_CHARS_500": "ฟิลด์นี้ต้องมีอักขระไม่เกิน 500 ตัว",
+        "DATE_FORMAT": "วันที่ต้องถูกต้องและอยู่ในรูปแบบ dd / MM / yyyy",
+        "NOT_A_NUMBER": "ต้องเป็นตัวเลข",
+        "AT_LEAST_ONE_AUTHOR": "ต้องมีผู้แต่งอย่างน้อยหนึ่งคน",
+        "MAX_5_AUTHORS": "มีผู้เขียนไม่เกิน 5 ราย"
+      }
+    }
+  },
+  "LOGIN": {
+    "BTN_LOGIN": "เข้าสู่ระบบ",
+     "PAGE_TITLE": "ลงชื่อเข้าใช้",
+     "LABEL_EMAIL": "อีเมล:",
+     "LABEL_PASSWORD": "รหัสผ่าน:",
+     "PLACEHOLDER_EMAIL": "ป้อนอีเมล",
+     "PLACEHOLDER_PASSWORD": "ป้อนรหัสผ่าน",
+     "LINK_FORGOTTEN_PASS": "ลืมรหัสผ่าน?",
+     "ERR_REQUIRED": "* จำเป็น",
+     "ERR_MAIL_FORMAT": "* ไม่ใช่อีเมล",
+     "ERR_MAX_PASS_50_CHARS": "* รหัสผ่านต้องไม่เกิน 50 ตัวอักษร",
+     "ERR_API_401": "ข้อมูลรับรองไม่ถูกต้องโปรดยืนยันข้อมูลเข้าสู่ระบบและรหัสผ่าน",
+     "ERR_API_GENERAL": "เกิดข้อผิดพลาดข้อมูลโปรดลองอีกครั้งในภายหลัง"
+  },
+  "TECHNICAL_PAGES": {
+    "GENERAL": {
+      "PAGE_TITLE": "อ๊ะ!",
+       "BTN_HOMEPAGE": "ไปที่หน้าแรก"
+    },
+    "NO_PAGE": {
+      "CODE": "404 - ไม่พบหน้าเว็บ",
+       "MESSAGE_LINE_1": "หน้าเว็บที่คุณกำลังค้นหาอาจถูกลบไปแล้ว",
+       "MESSAGE_LINE_2": "มีการเปลี่ยนแปลงชื่อหรือไม่สามารถใช้งานได้ชั่วคราว"
+    },
+    "SERVER_ERROR": {
+      "CODE": "ปัญหาทางเทคนิค",
+      "MESSAGE_LINE_1": "หน้าที่คุณกำลังมองหาไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์",
+      "MESSAGE_LINE_2": "โปรดลองอีกครั้งในภายหลัง"
+    }
+  },
+  "LANGUAGES": {
+    "CZECH": "สาธารณรัฐเช็ก",
+    "ENGLISH": "อังกฤษ",
+    "GREEK": "กรีก",
+    "SERBIAN": "เซอร์เบีย",
+    "THAI": "ไทย",
+    "TURKISH": "ตุรกี",
+    "VIETNAMESE": "เวียตนาม"
+  }
+}

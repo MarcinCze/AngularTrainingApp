@@ -1,0 +1,22 @@
+<section>
+
+  <app-courses-list-tools></app-courses-list-tools>
+
+  <div *ngIf="(courses$ | async).length == 0" class="no-data-container">
+    <span>{{ 'COURSE.LIST.NO_DATA' | translate }}</span>
+  </div>
+
+  <app-course-item *ngFor="let course of courses$ | async" [course]='course' (clickEdit)="onCourseEditClick($event)"
+    (clickDelete)="onCourseDeleteClick($event)">
+  </app-course-item>
+
+  <div class="load-container" *ngIf="loadMoreVisible$ | async">
+    <button (click)="onLoadMoreClick()">{{ 'COURSE.LIST.BTN_LOAD_MORE' | translate | uppercase }}</button>
+  </div>
+
+</section>
+
+<app-confirmation-modal [isVisible]='(messageBoxOptions$ | async).isVisible'
+  [title]='(messageBoxOptions$ | async).title' [message]='(messageBoxOptions$ | async).message'
+  (answerProvided)='onDeleteConfirmationReceived($event)'>
+</app-confirmation-modal>
