@@ -1,0 +1,26 @@
+div.user-btn>button {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  bottom: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+
+div.user-btn>img {
+  width: 20px;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+div.user-btn.left {
+  float: left;
+  margin-right: 1em;
+}
+
+div.user-btn.right {
+  float: right;
+}

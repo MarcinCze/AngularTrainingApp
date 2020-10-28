@@ -1,0 +1,10 @@
+<div *ngIf="user$ | async">
+  <div class="user-btn left">
+    <img src="assets/icons8-account-100.png">
+    <button (click)="onUserLinkClick()" class="font-open-sans-condensed">{{(user$ | async).firstName}} {{(user$ | async).lastName}}</button>
+  </div>
+  <div class="user-btn right">
+    <img src="assets/icons8-sign-out-100.png">
+    <button (click)="onLogoffLinkClick()" class="font-open-sans-condensed">Log off</button>
+  </div>
+</div>

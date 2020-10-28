@@ -1,0 +1,15 @@
+<header>
+  <app-header-main></app-header-main>
+</header>
+
+<div *ngIf="(isLoaderVisible$ | async)">
+  <app-loader></app-loader>
+</div>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <app-footer></app-footer>
+</footer>

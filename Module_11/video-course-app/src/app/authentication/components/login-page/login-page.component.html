@@ -1,0 +1,36 @@
+<div class="login-container">
+  <div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <h2>Login</h2>
+      <div style="color: red;"><h3>{{loginErrorMessage$ | async}}</h3></div>
+      <div>
+        <div class="form-label-row">
+          <label for="email"><strong>Email:</strong></label>
+          <span
+            *ngIf="email.invalid && (email.dirty || email.touched) && email.errors.required"><small>*required</small></span>
+          <span *ngIf="email.invalid && (email.dirty || email.touched) && email.errors.email"><small>*not an
+              email</small></span>
+        </div>
+        <input type="text" formControlName="email" name="email" id="email" placeholder="Enter e-mail">
+      </div>
+
+      <div style="margin-top: 1em;">
+        <div class="form-label-row">
+          <label for="password"><strong>Password:</strong></label>
+          <span
+            *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.required"><small>*required</small></span>
+          <span
+            *ngIf="password.invalid && (password.dirty || password.touched) && password.errors.maxlength"><small>*password
+              cannot contain more than 50 chars</small></span>
+        </div>
+        <input type="password" formControlName="password" name="password" id="password" placeholder="Enter password">
+      </div>
+
+      <div class="form-submit-row">
+        <small><a routerLink="/login">Forgot password?</a></small>
+        <button type="submit" class="btn blue btn-submit" [disabled]="loginForm.invalid">Login</button>
+      </div>
+
+    </form>
+  </div>
+</div>
