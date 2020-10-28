@@ -1,0 +1,8 @@
+<div>
+  <app-header-logo></app-header-logo>
+  <app-header-user *ngIf="authService.isAuthenticated()"></app-header-user>
+</div>
+
+<nav>
+  <app-breadcrumbs *ngIf="authService.isAuthenticated()"></app-breadcrumbs>
+</nav>
